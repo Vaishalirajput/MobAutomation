@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="44075" started-at="2017-12-14T12:07:17Z" finished-at="2017-12-14T12:08:01Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="44075" started-at="2017-12-14T12:07:17Z" finished-at="2017-12-14T12:08:01Z">
+      <class name="Tests.Mpin.MpinTest">
+        <test-method status="PASS" signature="logintoApp()[pri:0, instance:Tests.Mpin.MpinTest@5717c37]" name="logintoApp" is-config="true" duration-ms="33089" started-at="2017-12-14T17:37:17Z" finished-at="2017-12-14T17:37:50Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logintoApp -->
+        <test-method status="PASS" signature="testMpinDialogonLogin()[pri:0, instance:Tests.Mpin.MpinTest@5717c37]" name="testMpinDialogonLogin" duration-ms="5997" started-at="2017-12-14T17:37:50Z" finished-at="2017-12-14T17:37:56Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testMpinDialogonLogin -->
+        <test-method status="PASS" signature="logOut()[pri:0, instance:Tests.Mpin.MpinTest@5717c37]" name="logOut" is-config="true" duration-ms="4900" started-at="2017-12-14T17:37:56Z" finished-at="2017-12-14T17:38:01Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logOut -->
+      </class> <!-- Tests.Mpin.MpinTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
