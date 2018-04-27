@@ -1,13 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
-  <test name="Default test(failed)">
+<suite name="Failed suite [Suite1]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="LoginSanity(failed)">
     <classes>
-      <class name="Tests.Mpin.MpinTest">
+      <class name="Tests.logInTestCase.VerifyLetsGetStartedText">
         <methods>
-          <include name="testMpinDialogonLogin"/>
+          <include name="launchAppforLogin"/>
+          <include name="loginUILetsGetStarted"/>
         </methods>
-      </class> <!-- Tests.Mpin.MpinTest -->
+      </class> <!-- Tests.logInTestCase.VerifyLetsGetStartedText -->
     </classes>
-  </test> <!-- Default test(failed) -->
-</suite> <!-- Failed suite [Default suite] -->
+  </test> <!-- LoginSanity(failed) -->
+</suite> <!-- Failed suite [Suite1] -->

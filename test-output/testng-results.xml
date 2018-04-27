@@ -1,25 +1,75 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+<testng-results ignored="10" total="20" passed="10" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="44075" started-at="2017-12-14T12:07:17Z" finished-at="2017-12-14T12:08:01Z">
+  <suite started-at="2018-04-27T11:09:55Z" name="Suite1" finished-at="2018-04-27T11:10:23Z" duration-ms="27859">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="44075" started-at="2017-12-14T12:07:17Z" finished-at="2017-12-14T12:08:01Z">
-      <class name="Tests.Mpin.MpinTest">
-        <test-method status="PASS" signature="logintoApp()[pri:0, instance:Tests.Mpin.MpinTest@5717c37]" name="logintoApp" is-config="true" duration-ms="33089" started-at="2017-12-14T17:37:17Z" finished-at="2017-12-14T17:37:50Z">
+    <test started-at="2018-04-27T11:09:55Z" name="LoginSanity" finished-at="2018-04-27T11:10:23Z" duration-ms="27859">
+      <class name="Tests.logInTestCase.PasswordLabel">
+        <test-method signature="loginUIPasswordLabelText()[pri:0, instance:Tests.logInTestCase.PasswordLabel@4be29ed9]" started-at="2018-04-27T11:10:23Z" name="loginUIPasswordLabelText" finished-at="2018-04-27T11:10:23Z" duration-ms="57" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- logintoApp -->
-        <test-method status="PASS" signature="testMpinDialogonLogin()[pri:0, instance:Tests.Mpin.MpinTest@5717c37]" name="testMpinDialogonLogin" duration-ms="5997" started-at="2017-12-14T17:37:50Z" finished-at="2017-12-14T17:37:56Z">
+        </test-method> <!-- loginUIPasswordLabelText -->
+      </class> <!-- Tests.logInTestCase.PasswordLabel -->
+      <class name="Tests.logInTestCase.UsernameRadioButton">
+        <test-method signature="loginUIUsernameRadioButton()[pri:0, instance:Tests.logInTestCase.UsernameRadioButton@cb0755b]" started-at="2018-04-27T11:10:23Z" name="loginUIUsernameRadioButton" finished-at="2018-04-27T11:10:23Z" duration-ms="56" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testMpinDialogonLogin -->
-        <test-method status="PASS" signature="logOut()[pri:0, instance:Tests.Mpin.MpinTest@5717c37]" name="logOut" is-config="true" duration-ms="4900" started-at="2017-12-14T17:37:56Z" finished-at="2017-12-14T17:38:01Z">
+        </test-method> <!-- loginUIUsernameRadioButton -->
+      </class> <!-- Tests.logInTestCase.UsernameRadioButton -->
+      <class name="Tests.logInTestCase.VerifyLetsGetStartedText">
+        <test-method signature="loginUILetsGetStarted()[pri:0, instance:Tests.logInTestCase.VerifyLetsGetStartedText@33065d67]" started-at="2018-04-27T11:10:23Z" name="loginUILetsGetStarted" finished-at="2018-04-27T11:10:23Z" duration-ms="56" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- logOut -->
-      </class> <!-- Tests.Mpin.MpinTest -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+        </test-method> <!-- loginUILetsGetStarted -->
+      </class> <!-- Tests.logInTestCase.VerifyLetsGetStartedText -->
+      <class name="Tests.logInTestCase.ProceedButtonText">
+        <test-method signature="loginUIProceedButtonText()[pri:0, instance:Tests.logInTestCase.ProceedButtonText@548d708a]" started-at="2018-04-27T11:10:23Z" name="loginUIProceedButtonText" finished-at="2018-04-27T11:10:23Z" duration-ms="58" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginUIProceedButtonText -->
+      </class> <!-- Tests.logInTestCase.ProceedButtonText -->
+      <class name="Tests.logInTestCase.EmailRadioButton">
+        <test-method is-config="true" signature="launchAppforLogin()[pri:0, instance:Tests.logInTestCase.EmailRadioButton@53045c6c]" started-at="2018-04-27T11:09:20Z" name="launchAppforLogin" finished-at="2018-04-27T11:09:55Z" duration-ms="35442" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchAppforLogin -->
+        <test-method signature="loginUIEmailRadioButton()[pri:0, instance:Tests.logInTestCase.EmailRadioButton@53045c6c]" started-at="2018-04-27T11:09:56Z" name="loginUIEmailRadioButton" finished-at="2018-04-27T11:09:56Z" duration-ms="238" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginUIEmailRadioButton -->
+      </class> <!-- Tests.logInTestCase.EmailRadioButton -->
+      <class name="Tests.logInTestCase.LoginUsingEmail">
+        <test-method signature="loginUsingEmail()[pri:0, instance:Tests.logInTestCase.LoginUsingEmail@6bbe85a8]" started-at="2018-04-27T11:09:56Z" name="loginUsingEmail" finished-at="2018-04-27T11:10:12Z" duration-ms="15870" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginUsingEmail -->
+      </class> <!-- Tests.logInTestCase.LoginUsingEmail -->
+      <class name="Tests.logInTestCase.SignUpButtonText">
+        <test-method signature="loginUISignUpButtonText()[pri:0, instance:Tests.logInTestCase.SignUpButtonText@4b013c76]" started-at="2018-04-27T11:10:23Z" name="loginUISignUpButtonText" finished-at="2018-04-27T11:10:23Z" duration-ms="53" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginUISignUpButtonText -->
+      </class> <!-- Tests.logInTestCase.SignUpButtonText -->
+      <class name="Tests.logInTestCase.UsernameLabelText">
+        <test-method signature="loginUIUsernameLabelText()[pri:0, instance:Tests.logInTestCase.UsernameLabelText@53fb3dab]" started-at="2018-04-27T11:10:23Z" name="loginUIUsernameLabelText" finished-at="2018-04-27T11:10:23Z" duration-ms="52" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginUIUsernameLabelText -->
+      </class> <!-- Tests.logInTestCase.UsernameLabelText -->
+      <class name="Tests.logInTestCase.MobileRadioButton">
+        <test-method signature="loginUIMobileRadio()[pri:0, instance:Tests.logInTestCase.MobileRadioButton@3a7442c7]" started-at="2018-04-27T11:10:23Z" name="loginUIMobileRadio" finished-at="2018-04-27T11:10:23Z" duration-ms="67" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginUIMobileRadio -->
+      </class> <!-- Tests.logInTestCase.MobileRadioButton -->
+      <class name="Tests.logInTestCase.ForgotPasswordLinkText">
+        <test-method signature="loginUIForgotPasswordLinkText()[pri:0, instance:Tests.logInTestCase.ForgotPasswordLinkText@5149d738]" started-at="2018-04-27T11:10:12Z" name="loginUIForgotPasswordLinkText" finished-at="2018-04-27T11:10:23Z" duration-ms="10915" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginUIForgotPasswordLinkText -->
+      </class> <!-- Tests.logInTestCase.ForgotPasswordLinkText -->
+    </test> <!-- LoginSanity -->
+  </suite> <!-- Suite1 -->
 </testng-results>

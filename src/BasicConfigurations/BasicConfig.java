@@ -17,7 +17,7 @@ import io.appium.java_client.android.AndroidDriver;
 public class BasicConfig {
 	
 	public static AndroidDriver driver;
-	static DesiredCapabilities cabs = new DesiredCapabilities();
+	static DesiredCapabilities capbt = new DesiredCapabilities();
 	static SystemLocations sysLoc = new SystemLocations();
 	static Properties prop= new Properties();
 	
@@ -26,14 +26,11 @@ public class BasicConfig {
 	{
 		
 		prop = sysLoc.getConfigLocation();
-		//System.out.print(prop.getProperty("deviceName"));
-		cabs.setCapability("platformName", prop.getProperty("platform"));
-		cabs.setCapability("deviceName",prop.getProperty("deviceName"));
-		//cabs.setCapability("appActivity",prop.getProperty("activity"));
-		//cabs.setCapability("appPackage",prop.getProperty("package"));
-		cabs.setCapability("app",prop.getProperty("app"));
-		cabs.setCapability("noReset", true);
-		driver = new AndroidDriver(new URL("http://127.0.0.1:4720/wd/hub"),cabs);
+		capbt.setCapability("platformName", prop.getProperty("platform"));
+		capbt.setCapability("deviceName",prop.getProperty("deviceName"));
+		capbt.setCapability("app",prop.getProperty("app"));
+		capbt.setCapability("noReset", true);
+		driver = new AndroidDriver(new URL("http://127.0.0.1:4723/wd/hub"),capbt);
 		driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
 		return driver; 
 		

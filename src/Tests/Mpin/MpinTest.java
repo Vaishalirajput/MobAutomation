@@ -18,16 +18,16 @@ import Utilities.BasicOperations;
 
 public class MpinTest extends BasicConfig{
 	BasicConfig launchapp;
-	BasicOperations basicOp;
+	static BasicOperations basicOp;
 	SoftAssert sAssert;
 	MpinObjects page;
 	public MpinTest() throws IOException, InterruptedException
 	{
-		launchapp = new BasicConfig();
-		driver = launchapp.launchApp();
+		//launchapp = new BasicConfig();
+		//driver = launchapp.launchApp();
 		basicOp = new BasicOperations();
-		basicOp.driver = driver;
-		page = PageFactory.initElements(driver, MpinObjects.class);
+		//basicOp.driver = driver;
+		//page = PageFactory.initElements(driver, MpinObjects.class);
 		sAssert = new SoftAssert();
 		
 	}
@@ -38,7 +38,9 @@ public class MpinTest extends BasicConfig{
 	}
 	
 	@BeforeMethod
-	public void logintoApp() throws IOException, InterruptedException{
+	//public void logintoApp() throws IOException, InterruptedException{
+	public static void main(String[] args) throws IOException, InterruptedException{
+		MpinTest test = new MpinTest();
 		basicOp.login();
 	}
 	
