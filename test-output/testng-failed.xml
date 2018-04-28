@@ -3,12 +3,66 @@
 <suite name="Failed suite [Suite1]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="LoginSanity(failed)">
     <classes>
+      <class name="Tests.logInTestCase.UsernameRadioButton">
+        <methods>
+          <include name="launchAppforLogin"/>
+          <include name="loginUIUsernameRadioButton"/>
+        </methods>
+      </class> <!-- Tests.logInTestCase.UsernameRadioButton -->
+      <class name="Tests.logInTestCase.MobileRadioButton">
+        <methods>
+          <include name="launchAppforLogin"/>
+          <include name="loginUIMobileRadio"/>
+        </methods>
+      </class> <!-- Tests.logInTestCase.MobileRadioButton -->
+      <class name="Tests.logInTestCase.SignUpButtonText">
+        <methods>
+          <include name="loginUISignUpButtonText"/>
+          <include name="launchAppforLogin"/>
+        </methods>
+      </class> <!-- Tests.logInTestCase.SignUpButtonText -->
+      <class name="Tests.logInTestCase.UsernameLabelText">
+        <methods>
+          <include name="launchAppforLogin"/>
+          <include name="loginUIUsernameLabelText"/>
+        </methods>
+      </class> <!-- Tests.logInTestCase.UsernameLabelText -->
+      <class name="Tests.logInTestCase.ProceedButtonText">
+        <methods>
+          <include name="loginUIProceedButtonText"/>
+          <include name="launchAppforLogin"/>
+        </methods>
+      </class> <!-- Tests.logInTestCase.ProceedButtonText -->
+      <class name="Tests.logInTestCase.EmailRadioButton">
+        <methods>
+          <include name="launchAppforLogin"/>
+          <include name="loginUIEmailRadioButton"/>
+        </methods>
+      </class> <!-- Tests.logInTestCase.EmailRadioButton -->
+      <class name="Tests.logInTestCase.ForgotPasswordLinkText">
+        <methods>
+          <include name="launchAppforLogin"/>
+          <include name="loginUIForgotPasswordLinkText"/>
+        </methods>
+      </class> <!-- Tests.logInTestCase.ForgotPasswordLinkText -->
+      <class name="Tests.logInTestCase.LoginUsingEmail">
+        <methods>
+          <include name="launchAppforLogin"/>
+          <include name="loginUsingEmail"/>
+        </methods>
+      </class> <!-- Tests.logInTestCase.LoginUsingEmail -->
       <class name="Tests.logInTestCase.VerifyLetsGetStartedText">
         <methods>
           <include name="launchAppforLogin"/>
           <include name="loginUILetsGetStarted"/>
         </methods>
       </class> <!-- Tests.logInTestCase.VerifyLetsGetStartedText -->
+      <class name="Tests.logInTestCase.PasswordLabel">
+        <methods>
+          <include name="launchAppforLogin"/>
+          <include name="loginUIPasswordLabelText"/>
+        </methods>
+      </class> <!-- Tests.logInTestCase.PasswordLabel -->
     </classes>
   </test> <!-- LoginSanity(failed) -->
 </suite> <!-- Failed suite [Suite1] -->
